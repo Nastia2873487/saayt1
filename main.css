@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header{
+    padding: 50px 0;
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: rgb(142, 181, 216);
+    border-radius: 10px;
+}
+
+header nav ul li a{color: #000000;}
+
+header nav ul li :not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid rgb(142, 181, 216);
+}
+
+header nav ul li.btn a {
+    background: rgb(142, 181, 216);
+    color: #000;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover{
+    background: rgb(107, 138, 165);
+}
+
+/* HERO SECTION - ПЕРВАЯ СТРАНИЦА */
+.hero {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero--info{
+    width: 630px;
+}
+
+.hero--info h2{
+    color: rgb(141, 185, 244);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero--info h1{
+    color: rgb(0, 0, 0);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero--info p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+.hero--info .btn {
+    background: transparent;
+    color: rgb(142, 181, 216);
+    border: 2px solid rgb(142, 181, 216);
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero--info .btn:hover{
+    background: rgb(142, 181, 216);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(142, 181, 216, 0.3);
+}
+
+.hero img {
+    width: 600px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ПЕРВАЯ ЧЕРНАЯ СЕКЦИЯ */
+.black-section {
+    background-color: #000;
+    color: #fff;
+    padding: 120px 0;
+    width: 100%;
+}
+
+.black-section .container2 {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+.black-section img {
+    width: 600px;
+    height: 650px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.black-section .text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.black-section h2 {
+    color: rgb(142, 181, 216);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.black-section h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.black-section p {
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.black-section .btn {
+    background: transparent;
+    color: rgb(142, 181, 216);
+    border: 2px solid rgb(142, 181, 216);
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.black-section .btn:hover {
+    background: rgb(142, 181, 216);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(142, 181, 216, 0.3);
+}
+
+/* ВТОРАЯ ЧЕРНАЯ СЕКЦИЯ (ТРЕТЬЯ СТРАНИЦА) */
+.black {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 120px 0;
+    width: 100%;
+}
+
+.container3 {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+.fff{
+    flex: 1;
+    max-width: 600px;
+}
+
+.fff h2{
+    color: rgb(141, 185, 244);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.fff h1{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.fff p{
+    color: rgb(204, 204, 204);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+.fff .btn {
+    background: transparent;
+    color: rgb(142, 181, 216);
+    border: 2px solid rgb(142, 181, 216);
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fff .btn:hover{
+    background: rgb(142, 181, 216);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(142, 181, 216, 0.3);
+}
+
+.black img {
+    width: 600px;
+    height: 650px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 1440px) {
+    .container, .container2, .container3 {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero, .black-section .container2, .container3 {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    
+    .hero--info, .black-section .text-content, .fff {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .hero img, .black-section img, .black img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+/*последняя секция с информацией и кнопками */
+
+.black {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 200px 0 100px 0;
+    padding: 50px 40px;
+    
+}
+
+/* Левый блок - логотип и текст под ним */
+.left-column {
+    flex: 1;
+    margin-top: 150px;
+}
+
+.black .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.logo-text p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 400px;
+}
+
+/* Правый блок - кнопки и меню */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+/* Кнопки в строку */
+.buttons-row {
+    display: flex;
+    gap: 260px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.btn2, .btn3 {
+    background: rgb(142, 181, 216);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 500ms ease;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn2:hover, .btn3:hover {
+    background: rgb(107, 138, 165);
+    transform: translateY(-2px);
+}
+
+/* Контейнер для двух столбцов меню */
+.menus-container {
+    display: flex;
+    gap: 0px;
+    
+}
+
+/* Общие стили для столбцов меню */
+.menu-column {
+    flex: 1;
+    
+}
+
+.menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu-column ul li {
+    margin-bottom: 0px;
+}
+
+.menu-column ul li a {
+    color: #fffefe;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 300ms ease;
+    display: inline-block;
+}
+
+.menu-column ul li a:hover {
+    color: rgb(142, 181, 216);
+    transform: translateX(5px);
+}
+
+/* Специфичные стили для левого меню (под кнопкой btn2) */
+.menu-left {
+    text-align: left;
+}
+
+/* Специфичные стили для правого меню (под кнопкой btn3) */
+.menu-right {
+    text-align: left;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .black {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .buttons-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menus-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .logo-text p {
+        max-width: 100%;
+    }
+}
