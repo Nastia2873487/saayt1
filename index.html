@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        /* ФОН ПЕРВОЙ СТРАНИЦЫ */
+        body {
+            background-image: url('img/img2fon.svg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .wrapper {
+            /* Градиент только сверху (первые 50% высоты) */
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.6) 20%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0) 50%
+            );
+            min-height: 100vh;
+            color: white;
+        }
+        .wrapper {
+            /* Градиент только снизу (последние 50% высоты) */
+            background: linear-gradient(
+                to top,
+                rgb(0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.595) 20%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0.064) 50%
+            );
+            min-height: 100vh;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo"><h2>MNTN</h2></span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="btn"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>   
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Get Started</h2>
+                <h1>What level of hiker are you?</h1>
+                <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
+                <button class="btn">read more</button>
+            </div>
+            <img src="img/img1.svg" alt="">
+        </div>
+    </div>
+    
+    <!-- Первая черная секция -->
+    <section class="black-section">
+        <div class="container2">
+            <img src="img/img3.svg" alt="Hiking Gear">
+            <div class="text-content">
+                <h2>Hiking Essentials</h2>
+                <h1>Picking the right Hiking Gear!</h1>
+                <p>The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+                    Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+                <button class="btn">read more</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Вторая черная секция -->
+    <section class="black">
+        <div class="container3">
+            <div class="fff">
+                <h2>where you go is the key</h2>
+                <h1>Understand Your Map & Timing</h1>
+                <p>To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
+                <button class="btn">read more</button>
+            </div>
+            <img src="img/img4.svg" alt="">
+        </div>
+    </section>
+
+    <div class="black">
+        <!-- Левый блок с логотипом и текстом -->
+        <div class="left-column">
+            <div class="logo">MNTN</div>
+            <div class="logo-text">
+                <p>Get out there & discover your next slope, mountain & destination!</p>
+            </div>
+        </div>
+        
+        <!-- Правый блок с кнопками и меню -->
+        <div class="right-column">
+            <!-- Кнопки в строку -->
+            <div class="buttons-row">
+                <a href="img/img6.svg" class="btn2">More on The Blog</a>
+                <a href="#" class="btn3">More on MNTN</a>
+            </div>
+            
+            <!-- Два столбца меню под кнопками -->
+            <div class="menus-container">
+                <!-- Первый столбец меню под кнопкой btn2 -->
+                <div class="menu-column menu-left">
+                    <ul>
+                        <li><a href="#">About MNTN</a></li>
+                        <li><a href="#">Contributors & Writers</a></li>
+                        <li><a href="#">Write For Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Второй столбец меню под кнопкой btn3 -->
+                <div class="menu-column menu-right">
+                    <ul>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
